@@ -64,14 +64,60 @@ body {
 #box li a:hover{
   color:#b9b9b9;
 }
-#mainNav .container{
-  display: flex;
+
+#mainNav .container ul{
+  margin: 0;
+  padding: 0;
+  display : flex;
   justify-content: center;
   align-items: center;
-  height: 25px;
 }
 #mainNav .container li {
   display: inline-block;
-  padding: 0;
-  
+  margin: 0 20px;
+}
+/* 
+  Each of the side choice
+*/
+#mainNav .container li a{
+  display: block;
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #001f3f;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+#mainNav .container ul:hover li a{
+  transform: scale(1.5);
+  opacity: .2;
+  filter: blur(5px);
+
+}
+#mainNav .container ul li a:hover{
+  transform: scale(2);
+  opacity: 1;
+  filter:blur(0);
+}
+
+#mainNav .container ul li a:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #D2B48C;
+  transition: transform 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1; 
+}
+
+
+#mainNav .container ul li a:hover:before{
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
 }
