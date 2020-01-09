@@ -64,7 +64,7 @@ body {
 #box li a:hover{
   color:#b9b9b9;
 }
-/* #mainNav .container{
+#mainNav .container{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,4 +74,4 @@ body {
   display: inline-block;
   padding: 0;
   
-} */
+}
