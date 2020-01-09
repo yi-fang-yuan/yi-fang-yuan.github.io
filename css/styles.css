@@ -1,7 +1,7 @@
 body {
   margin:0;
   padding:0;  
-  background: url('hawaii.jpg') no-repeat center;
+  background: url('background.jpg') no-repeat center;
   position: relative;
   height: 860px;
   min-height: 700px;
@@ -19,12 +19,13 @@ body {
 
 #box{
   width: 450px;
-  background: rgba(7, 1, 1, 0.425);
+  background: rgba(0, 0, 0, 0.637);
   padding: 40px;
   text-align: center;
   margin: auto;
   margin-top:5%;
   color: white;
+  padding-bottom: 5px;
   font-family: 'Century Gothic', sans-serif;
 }
 
@@ -57,5 +58,20 @@ body {
 
 #box li a {
   color: white;
-  font-size: 25px;
+  font-size: 50px;
+
+}
+#box li a:hover{
+  color:#b9b9b9;
+}
+#mainNav .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+}
+#mainNav .container li {
+  display: inline-block;
+  padding: 0;
+  
 }
