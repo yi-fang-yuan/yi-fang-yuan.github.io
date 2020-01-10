@@ -8,8 +8,7 @@ body {
   background-size: cover !important;
  -webkit-background-size: cover !important;
   text-align: center;
-  overflow-x: hidden ;
-  overflow-y: scroll;
+   
   }
 #box .profile-img{
   width: 200px;
