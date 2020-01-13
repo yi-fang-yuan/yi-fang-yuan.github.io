@@ -1,0 +1,18 @@
+import React from "react"
+
+function FullPage(){
+
+}
+
+const FullPage = ()=>{
+    return (
+        <div>
+        
+        </div>
+    )
+}
+
+<FullPage>
+    <NavBar choices = {["home","about","resume","projects"]}></NavBar>
+    <About></About>
+</FullPage>
