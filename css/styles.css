@@ -108,12 +108,12 @@ body {
 }
 .fullpage #box{
   position: absolute;
-  width: 450px;
+  width: 52vw;
   /* background: rgba(0, 0, 0, 0.637); */
   padding: 40px;
   text-align: center;
   margin: auto;
-  margin-top:5%;
+  margin-top:2.5%;
   margin-left: 5%;
   color: white;
   padding-bottom: 5px;
@@ -174,9 +174,10 @@ body {
   font-family: 'Montserrat' , sans-serif;
   list-style: none;
   padding: 0;
-  width: 450px;
+  /* width: 450px; */
+  width: 32vw;
   margin:0;
-  right: 2.5%;
+  right: 4%;
   top : 19.5%;
   color: white;
 }
