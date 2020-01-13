@@ -108,20 +108,19 @@ body {
 }
 .fullpage #box{
   position: absolute;
-  width: 450px;
+  width: 350px;
   /* background: rgba(0, 0, 0, 0.637); */
-  padding: 40px;
+  padding: 4%;
   text-align: center;
   margin: auto;
-  margin-top:5%;
-  margin-left: 5%;
+  /* margin-top:5%;
+  margin-left: 5%; */
   color: white;
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; */
   font-family: 'Century Gothic', sans-serif;
 }
 
 #box h1{
-  font-size: 40px;
   letter-spacing: 4px;
   font-weight: 100;
   font-family: 'Montserrat', sans-serif;
@@ -174,7 +173,7 @@ body {
   font-family: 'Montserrat' , sans-serif;
   list-style: none;
   padding: 0;
-  width: 450px;
+  width: 45%;
   margin:0;
   right: 2.5%;
   top : 19.5%;
