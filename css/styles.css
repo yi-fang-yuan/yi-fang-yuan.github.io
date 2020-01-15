@@ -94,8 +94,8 @@ body {
 }
 
 #box .profile-img{
-  width: 200px;
-  height: 200px;
+  width: 20vmin;
+  height: 20vmin;
   border-radius: 50%;
 }
 
@@ -108,12 +108,11 @@ body {
 }
 .fullpage #box{
   position: absolute;
-  width: 52vw;
-  /* background: rgba(0, 0, 0, 0.637); */
-  padding: 40px;
+  width: 40vw;
+  padding: 5vmin;
   text-align: center;
   margin: auto;
-  margin-top:2.5%;
+  margin-top:13vmin;
   margin-left: 5%;
   color: white;
   padding-bottom: 5px;
@@ -121,19 +120,21 @@ body {
 }
 
 #box h1{
-  font-size: 40px;
+  font-size: 5vmin;
   letter-spacing: 4px;
   font-weight: 100;
   font-family: 'Montserrat', sans-serif;
 }
 
 #box h5{
-  font-size: 25px;
+  font-size: 4vmin;
   letter-spacing: 3px;
 }
 
 #box p{
   text-align: justify;
+  font-size: 3.5vmin;
+
 }
 
 #box ul{
@@ -164,21 +165,22 @@ body {
   border-color: aquamarine;
   margin-bottom:15.5%;
   font-family: 'Montserrat' , sans-serif;
+  font-size: 5vmin;
   
 }
 .skills h3{
   display:flex;
+  font-size: 3vmin;
 }
 .skills {
   position: absolute;
   font-family: 'Montserrat' , sans-serif;
   list-style: none;
   padding: 0;
-  /* width: 450px; */
-  width: 32vw;
+  width: 35vw;
   margin:0;
-  right: 4%;
-  top : 19.5%;
+  right: 7vw;
+  top : 19%;
   color: white;
 }
 .skills li{
@@ -219,9 +221,12 @@ body {
 .REACT{
   width: 50%;
 }
+.Python{
+  width: 70%;
+}
 
 .fullpage{
+  position: relative;
   width: 100vw;
   height: 100vh;
-  position: relative;
 }
