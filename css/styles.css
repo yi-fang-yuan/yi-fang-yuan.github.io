@@ -230,3 +230,132 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+/* Now what follows is Resume section */
+
+
+#thirdpage .education h3 span{
+  position: absolute;
+  left: 25vw;
+  top: 10vh;
+  display: block;
+  border-bottom: 3px solid #2187e7;
+}
+@media only screen and (max-width: 500px){
+  #thirdpage .education h3 span{
+   position: absolute;
+   left: 35vw;
+    
+  }
+}
+#thirdpage .McGill {
+  position: absolute;
+  left: 40vw;
+  top: 10vh;
+  text-align: justify;
+  font-family: 'Montserrat' , sans-serif;
+}
+@media only screen and (max-width: 500px){
+  #thirdpage .McGill{
+    position: relative;
+    left:auto;
+    top: 15vh;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+  }
+} 
+
+#thirdpage .McGill p{
+  font: 20px/20px 'librebaskerville-italic', serif;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.Mariano {
+  position: absolute;
+  left: 40vw;
+  top: 30vh;
+  text-align: justify;
+  font-family: 'Montserrat' , sans-serif;
+}
+@media only screen and (max-width: 500px){
+.Mariano{
+  position: relative;
+  left:auto;
+  top: 19vh;
+  text-align: center;
+  padding: 0px 40px 0px 40px;
+}
+}
+.Mariano h1{
+  font-family: 'montserrat',sans-serif;
+}
+
+
+.Mariano h2 {
+  font: italic lighter 20px/20px 'librebaskerville-italic', serif;
+}
+
+.Mariano h3{
+  font: italic lighter 20px/10px 'librebaskerville-italic', serif;
+}
+
+.work h3 span{
+  position: absolute;
+  left: 25vw;
+  top: 50vh;
+  font-family:'Montserrat', sans-serif;
+  display: block;
+  border-bottom: 3px solid #2187e7;
+}
+
+@media only screen and (max-width: 500px){
+  .work h3 span{
+    position: absolute;
+    left: 35vw;
+    top: 57vh;
+  }
+}
+
+.firstJob{
+  position: absolute;
+  top: 50vh;
+  left:40vw;
+  margin:0;
+  text-align: justify;
+  font-family: 'Montserrat' , sans-serif;
+
+}
+
+.firstJob ul {
+  display: block;
+  list-style-position: outside;
+  font: italic lighter 20px/20px 'librebaskerville-italic', serif;
+  padding-left: 10px;
+  
+}
+@media only screen and (max-width: 500px){
+  .firstJob {
+    position: absolute;
+    left:auto;
+    top: 60vh;
+    font: bold 15px/15px 'Montserrat' , sans-serif;
+    text-align: center;
+
+  }
+}
+@media only screen and (max-width: 500px){
+  .firstJob ul {
+    display: block;
+    list-style-position: inside;
+    text-align: justify;
+    font: italic lighter 15px/15px 'librebaskerville-italic', serif;
+    padding-left:10px;
+    padding-right:10px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .firstJob ul li{
+    margin-left: 5px;    
+  }
+}
