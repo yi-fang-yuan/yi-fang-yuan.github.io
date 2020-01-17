@@ -111,7 +111,7 @@ body {
   padding: 5vmin;
   text-align: center;
   margin: auto;
-  margin-top:13vmin;
+  margin-top:9vmin;
   margin-left: 5%;
   color: white;
   padding-bottom: 5px;
@@ -189,7 +189,7 @@ body {
   width: 35vw;
   margin:0;
   right: 7vw;
-  top : 18%;
+  top : 14%;
   color: white;
 }
 
@@ -365,6 +365,7 @@ body {
   list-style-position: outside;
   font: italic lighter 20px/20px 'librebaskerville-italic', serif;
   padding-left: 10px;
+  padding-right:50px;
   
 }
 @media only screen and (max-width: 500px){
@@ -381,8 +382,8 @@ body {
   .firstJob ul {
     display: block;
     list-style-position: inside;
-    text-align: justify;
-    font: italic lighter 15px/15px 'librebaskerville-italic', serif;
+    text-align: left;
+    font: italic lighter 15px/18px 'librebaskerville-italic', serif;
     padding-left:10px;
     padding-right:10px;
   }
@@ -423,6 +424,6 @@ body {
     display: block;
     list-style-position: inside;
     font: italic lighter 15px/15px 'librebaskerville-italic', serif;
-    text-align: justify;
+    text-align: left;
   }
 }
