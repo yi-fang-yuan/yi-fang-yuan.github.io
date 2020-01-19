@@ -1,24 +1,31 @@
 body {
   margin:0;
   padding:0;  
-  position: relative;
-  /* height: 860px; */
-  /* min-height: 700px; */
-  /* background-size:  !important; */
-  /* -webkit-background-size: cover !important; */
   text-align: center;
   
 }
+
+.firstpage{
+  width: 100vw;
+  height: 100vh;
+}
+.fullpage{
+  width: 100vw;
+}
+
 #backgroundimage{
   background: url('forest.jpg') no-repeat center;
   background-size: cover;
-  position: absolute;
   z-index: -10000000;
   width : 100vw;
   height : 100vh;
   margin: 0;
 }
 
+#welcome .fullpage{
+  display:flex;
+  justify-content: center;
+}
 
 #mainNav  ul{
   position: fixed;
@@ -27,8 +34,6 @@ body {
   width: 100vw;
   padding: 10px;
   margin: 0;
-  /* padding: 0; */
-  display : flex;
   justify-content: center;
   align-items: center;
  
@@ -63,8 +68,6 @@ body {
 
 #mainNav ul li a:before{
   content: '';
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background: #D2B48C;
@@ -81,13 +84,15 @@ body {
   transform: scaleX(1);
 }
 
-#welcome h1{
+#backgroundimage{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ #backgroundimage h1{
   font-size: 7.5vmin;
   font-family: 'Montserrat' , sans-serif;
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  z-index:1000;
   text-align: center;
   color:rgb(39,88,107,0.8);
 }
@@ -102,26 +107,32 @@ body {
   background: #2B2B2B no-repeat center fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  display:flex;
+  flex-direction: row;
   
 }
+@media only screen and (max-width: 900px){
+#secondpage.fullpage{
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+}
+
 .fullpage #box{
-  position: absolute;
   width: 40vw;
-  padding: 5vmin;
   text-align: center;
   margin: auto;
   margin-top:9vmin;
-  margin-left: 5%;
+  /* margin-left: 5%; */
+  margin-bottom: 5vh;
   color: white;
-  padding-bottom: 5px;
   font-family: 'Century Gothic', sans-serif;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
 .fullpage #box{
-  position: absolute;
-  left: 7vw;
+  justify-content: center;
   width:70vw;
 }
 }
@@ -142,9 +153,7 @@ body {
 #box p{
   text-align: justify;
   font-size: 3.5vmin;
-
 }
-
 
 #box ul{
   margin: 0;
@@ -182,26 +191,21 @@ body {
   font-size: 3vmin;
 }
 .skills {
-  position: absolute;
   font-family: 'Montserrat' , sans-serif;
   list-style: none;
   padding: 0;
   width: 35vw;
-  margin:0;
-  right: 7vw;
-  top : 14%;
+  margin: 10vh 5vw 0vh 0vw;
   color: white;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
   .skills{
-    position: absolute;
     list-style: none;
     padding: 0;
     width: 60vw;
     margin:0;
-    left: 15vw;
-    top : 70vh;
+    margin-left:20vw;
   }
 } 
 .skills li{
@@ -246,51 +250,46 @@ body {
   width: 70%;
 }
 
-.firstpage{
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-.fullpage{
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
+
 
 /* Now what follows is Resume section */
 
-@media only screen and (max-width: 500px){
-.fullpage{
-    height: 150vh;
-  }
+.education{
+  display:flex;
+  flex-direction: row;
+  margin-top:20vh;
+  margin-left: 25vw;
+
 }
 
-#thirdpage .education h3 span{
-  position: absolute;
-  left: 25vw;
-  top: 10vh;
-  display: block;
-  border-bottom: 3px solid #2187e7;
+#schools{
+  margin-left:10vw;
 }
-@media only screen and (max-width: 500px){
-  #thirdpage .education h3 span{
-   position: absolute;
-   left: 35vw;
-    
+
+@media only screen and (max-width: 900px){
+#schools{
+  margin:0;
+}
+}
+@media only screen and (max-width: 900px){
+  .education{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    margin-top: 10vh;
   }
 }
+#thirdpage .education h3 span{
+  border-bottom: 3px solid #2187e7;
+}
+
 #thirdpage .McGill {
-  position: absolute;
-  left: 40vw;
-  top: 10vh;
   text-align: justify;
   font-family: 'Montserrat' , sans-serif;
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
   #thirdpage .McGill{
-    position: relative;
-    left:auto;
-    top: 15vh;
     text-align: center;
     padding: 0px 40px 0px 40px;
   }
@@ -303,17 +302,11 @@ body {
 }
 
 .Mariano {
-  position: absolute;
-  left: 40vw;
-  top: 30vh;
   text-align: justify;
   font-family: 'Montserrat' , sans-serif;
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
 .Mariano{
-  position: relative;
-  left:auto;
-  top: 19vh;
   text-align: center;
   padding: 0px 40px 0px 40px;
 }
@@ -331,99 +324,285 @@ body {
   font: italic lighter 20px/10px 'librebaskerville-italic', serif;
 }
 
+
+.work{
+  display:flex;
+  flex-direction: row;
+  margin-top:10vh;
+  margin-left: 25vw;
+}
+@media only screen and (max-width: 900px){
+  .work{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    margin-top: 10vh;
+  }
+}
 .work h3 span{
-  position: absolute;
-  left: 25vw;
-  top: 50vh;
   font-family:'Montserrat', sans-serif;
   display: block;
   border-bottom: 3px solid #2187e7;
 }
 
-@media only screen and (max-width: 500px){
-  .work h3 span{
-    position: absolute;
-    left: 35vw;
-    top: 70vh;
-  }
+#jobs{
+  margin-left:10vw;
 }
 
+@media only screen and (max-width: 900px){
+  #jobs{
+    margin:0;
+  }
+}
 .firstJob{
-  position: absolute;
-  top: 50vh;
-  left:40vw;
-  margin:0;
   text-align: justify;
   font-family: 'Montserrat' , sans-serif;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .firstJob ul {
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  list-style-position: outside;
+  /* list-style-position: in; */
   font: italic lighter 20px/20px 'librebaskerville-italic', serif;
   padding-left: 10px;
   padding-right:50px;
   
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
   .firstJob {
-    position: absolute;
-    left:auto;
-    top: 75vh;
     font: bold 15px/15px 'Montserrat' , sans-serif;
     text-align: center;
 
   }
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
   .firstJob ul {
-    display: block;
-    list-style-position: inside;
-    text-align: left;
+    list-style-position: outside;
+    text-align: justify;
     font: italic lighter 15px/18px 'librebaskerville-italic', serif;
-    padding-left:10px;
+    margin-left:10px;
     padding-right:10px;
   }
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
   .firstJob ul li{
     margin-left: 5px;    
   }
 }
 
 .secondJob{
-  position: absolute;
-  top: 75vh;
-  left:40vw;
-  margin:0;
+  margin-top:5vh;
   text-align: justify;
   font-family: 'Montserrat' , sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .secondJob ul {
-  display: block;
   list-style-position: outside;
   font: italic lighter 20px/20px 'librebaskerville-italic', serif;
   padding-left: 10px;
+  padding-right:10px;
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
   .secondJob {
-    position: absolute;
-    left:auto;
-    top: 95vh;
     font: bold 15px/19px 'Montserrat' , sans-serif;
     text-align: center;
   }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 900px){
 .secondJob ul{
-    display: block;
-    list-style-position: inside;
+    list-style-position: outside;
     font: italic lighter 15px/15px 'librebaskerville-italic', serif;
-    text-align: left;
+    text-align: justify;
+    margin-left:10px;
+    
   }
+}
+
+/*Project page */
+
+#Projects.fullpage{
+  background: #BBBBBB no-repeat center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+}
+
+@media only screen and (max-width: 900px){
+ #Projects.fullpage{
+  background: #BBBBBB no-repeat center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:auto;
+  }
+  }
+#Projects {
+  display:flex;
+  flex-direction: column;
+}
+
+
+#firstRow{
+  display:flex;
+  flex-direction:row;
+}
+
+@media only screen and (max-width: 900px){
+  #firstRow{
+   flex-direction: column;
+   align-items: center;
+  }
+}
+.firstProject {
+  margin: 15vh 0vh 0vh 27vw;
+}
+.firstProject h1{
+  border-bottom: 3px solid #3D9970;
+  
+}
+@media only screen and (max-width: 900px){
+.firstProject{
+    margin: 10vh 0 0 0vw;
+  }
+}
+.firstProject img{
+  width: 250px; 
+  height: 250px;
+}
+
+.links li{
+  display:inline-block;
+  padding-right: 15px;
+}
+
+.links li a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.5vh;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  
+}
+.links li a:hover{
+  background-color:#D2B48C;
+}
+
+.secondProject{
+  margin-left: 25vw;
+  margin-top: 15vh;
+ 
+}
+@media only screen and (max-width: 900px){
+  .secondProject{
+    margin: 10vh 0 0
+  }
+}
+
+.secondProject h1{
+  border-bottom: 3px solid #3D9970;
+}
+
+.secondProject img{
+  width: 250px; 
+  height: 250px;
+}
+
+.link2 li{
+  display:inline-block;
+  padding-right: 15px;
+}
+
+.link2 li a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.5vh;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.link2 li a:hover{
+  background-color:#D2B48C;
+}
+
+#secondRow{
+  display:flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 900px){
+  #secondRow{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.thirdProject{
+  margin-left: 27vw;
+  margin-top: 5vh;
+}
+@media only screen and (max-width: 900px){
+  .thirdProject{
+    margin: 10vh 0 0 0vw;
+  }
+  }
+.thirdProject h1{
+  border-bottom: 3px solid #3D9970;
+}
+.thirdProject img{
+  width: 250px; 
+  height: 250px;
+}
+
+.link3 li{
+  display:inline-block;
+  padding-right: 15px;
+}
+.link3 li a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.5vh;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.link3 li a:hover{
+  background-color:#D2B48C;
+}
+
+.fourthProject{
+  margin-left: 25vw;
+  margin-top: 5vh;
+
+}
+
+@media only screen and (max-width: 900px){
+  .fourthProject{
+    margin: 10vh 0 0 0vw;
+  }
+  }
+
+.fourthProject h1{
+  border-bottom: 3px solid #3D9970;
+}
+.fourthProject img{
+  width: 250px; 
+  height: 250px;
+}
+
+.link4 li{
+  display:inline-block;
+  padding-right: 15px;
+}
+.link4 li a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.5vh;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.link4 li a:hover{
+  background-color:#D2B48C;
 }
