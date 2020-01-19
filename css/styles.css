@@ -89,12 +89,15 @@ body {
   flex-direction: column;
   justify-content: center;
 }
- #backgroundimage h1{
+#backgroundimage h1{
   font-size: 7.5vmin;
+  font-weight:400;
   font-family: 'Montserrat' , sans-serif;
   z-index:1000;
+  letter-spacing: 1vw;
   text-align: center;
-  color:rgb(39,88,107,0.8);
+  opacity: .5;
+  /* color:rgb(39,88,107,0.8); */
 }
 
 #box .profile-img{
@@ -257,7 +260,7 @@ body {
 .education{
   display:flex;
   flex-direction: row;
-  margin-top:20vh;
+  margin-top:13vh;
   margin-left: 25vw;
 
 }
@@ -328,7 +331,7 @@ body {
 .work{
   display:flex;
   flex-direction: row;
-  margin-top:10vh;
+  margin-top:5vh;
   margin-left: 25vw;
 }
 @media only screen and (max-width: 900px){
