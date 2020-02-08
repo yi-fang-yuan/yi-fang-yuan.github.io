@@ -11,6 +11,7 @@ body {
 }
 .fullpage{
   width: 100vw;
+  height: 100vh;
 }
 
 #backgroundimage{
@@ -231,7 +232,7 @@ body {
 }
 
 .HTML{
-  width: 70%;
+  width: 40%;
 }
 .CSS{
   width: 65%;
@@ -244,13 +245,13 @@ body {
 }
 
 .JavaScript{
-  width: 80%;
+  width: 60%;
 }
 .REACT{
-  width: 50%;
+  width: 30%;
 }
 .Python{
-  width: 70%;
+  width: 50%;
 }
 
 
